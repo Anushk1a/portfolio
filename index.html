@@ -5,12 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anushka Singh — Portfolio</title>
 
-  <!-- Palette -->
-  <!-- dusty rose (primary) : #EFA6B0 -->
-  <!-- deeper rose (accent)  : #D67A86 -->
-  <!-- warm brown (text/head): #3E2B28 -->
-  <!-- soft cream (bg)       : #FBF6F5 -->
-
   <style>
     :root{
       --primary: #EFA6B0;
@@ -47,7 +41,6 @@
       align-items:center;
     }
 
-    /* Photo box */
     .photo{
       width:120px;
       height:120px;
@@ -69,7 +62,6 @@
       display:block;
     }
 
-    /* name & role */
     .heading{
       display:flex;
       flex-direction:column;
@@ -102,7 +94,6 @@
     }
     a.resume-btn:hover{ transform: translateY(-3px); }
 
-    /* Section styling */
     h2.section-title{
       font-size:20px;
       margin-bottom:18px;
@@ -141,7 +132,6 @@
       color:var(--text);
     }
 
-    /* Footer */
     footer{
       margin-top:28px;
       text-align:center;
@@ -149,7 +139,6 @@
       font-size:13px;
     }
 
-    /* Responsive */
     @media (max-width:520px){
       .photo{ width:92px; height:92px; flex: 0 0 92px; }
       .name{ font-size:18px; }
@@ -161,7 +150,6 @@
   <div class="container">
 
     <header>
-      <!-- Photo -->
       <div class="photo">
         <img src="mee.jpg" alt="Anushka Singh" class="my-pic">
       </div>
@@ -172,23 +160,15 @@
       </div>
 
       <nav>
-        <a class="resume-btn" href="anushka_resumee.pdf" download>Download Resume</a>
+        <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
       </nav>
     </header>
 
-    <!-- About Me -->
     <section id="about" style="margin-top:40px;">
       <h2 class="section-title">About Me</h2>
-      <div style="
-        background:white;
-        padding:24px;
-        border-radius:16px;
-        box-shadow:0 8px 20px rgba(239,166,176,0.12);
-        color:#3E2B28;
-        line-height:1.6;
-      ">
+      <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); line-height:1.6;">
         <p>
-          DevOps Engineer with 2+ years of experience in test environment support, CI/CD pipelines, cloud automation, container orchestration, and UNIX/Linux administration. Skilled in Docker, Kubernetes, Jenkins, Ansible, GitHub, Splunk, Prometheus, and Grafana. Strong experience supporting Java/Spring Boot microservices, managing OS patching, vulnerability fixes, certificate renewals, and 24x7 environment support. Proven ability to collaborate across development, QA, UNIX, DBA, and middleware teams. Developed a personal voice assistant, Jarvis, to automate daily workflows and open apps/websites, showcasing hands-on expertise in Python, Docker, and automation.
+          Immediate joiner DevOps Engineer with 2+ years of experience working on Java-based microservices, cloud-native platforms, and containerized applications. Skilled in Docker, Kubernetes, Jenkins, Ansible, GitHub, Prometheus, Grafana, and AWS. Strong exposure to production systems, troubleshooting, and platform engineering with ability to implement CI/CD pipelines and automation solutions. Passionate about building scalable and reliable enterprise-grade systems in Agile environments.
         </p>
         <p style="margin-top:12px;">
           I love clean UI, automation, and solving problems with simple elegant solutions.
@@ -197,127 +177,82 @@
       </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills" style="margin-top:40px;">
       <h2 class="section-title">Skills</h2>
-      <div style="
-        background:white;
-        padding:24px;
-        border-radius:16px;
-        box-shadow:0 8px 20px rgba(239,166,176,0.12);
-        display:flex;
-        flex-wrap:wrap;
-        gap:12px;
-      ">
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Jenkins</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">GitHub</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">SonarQube</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">CI/CD Pipelines</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Docker</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Kubernetes</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Helm</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Linux</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Terraform</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Ansible</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Prometheus</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Grafana</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Splunk</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Shell Scripting</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">AWS</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Java</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Spring Boot</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Microservices</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Jira</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Confluence</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">WAS/MQ</span>
-        <span style="background:#f3e6e7; padding:6px 12px; border-radius:999px;">Control-M</span>
+      <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); display:flex; flex-wrap:wrap; gap:12px;">
+        <span>Jenkins</span><span>GitHub</span><span>SonarQube</span><span>CI/CD Pipelines</span>
+        <span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Linux</span>
+        <span>Terraform</span><span>Ansible</span><span>Prometheus</span><span>Grafana</span>
+        <span>Splunk</span><span>Shell Scripting</span><span>AWS</span><span>Java</span>
+        <span>Spring Boot</span><span>Microservices</span><span>Jira</span><span>Confluence</span>
+        <span>WAS/MQ</span><span>Control-M</span>
       </div>
     </section>
 
-    <!-- Work Experience -->
     <section id="experience" style="margin-top:40px;">
       <h2 class="section-title">Work Experience</h2>
       <div style="display:flex; flex-direction:column; gap:16px;">
 
         <div style="background:white; padding:20px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12);">
-          <h3>Cloud DevOps Engineer — HCLTech, Pune</h3>
+          <h3>Software / Cloud Engineer — HCLTech, Pune</h3>
           <p><i>July 2024 – Present</i></p>
           <ul style="margin-top:8px; line-height:1.5;">
-            <li>Built and supported multiple test environments ensuring high availability for releases.</li>
-            <li>Managed OS patching, certificate renewals, vulnerability remediation, and environment health checks.</li>
-            <li>Streamlined CI/CD pipelines using Jenkins and GitHub, reducing deployment time by 40%.</li>
-            <li>Containerized and deployed Java/Spring Boot microservices using Docker, Kubernetes, and Helm.</li>
-            <li>Implemented observability with Prometheus, Grafana, and Splunk, improving issue detection.</li>
-            <li>Troubleshot environment issues including service outages and failed deployments.</li>
-            <li>Coordinated with Dev, QA, UNIX, DBA, and MQ teams for environment stability.</li>
-            <li>Provided on-call, UK shift, and weekend support on rotational basis.</li>
+            <li>Developed, deployed, and supported Java/Spring Boot microservices on AWS ensuring high scalability, availability, and reliability.</li>
+            <li>Built and maintained CI/CD pipelines using Jenkins and GitHub Actions for automated build, test, and deployment.</li>
+            <li>Deployed Dockerized microservices on Kubernetes (EKS & on-prem) using Helm with rolling updates.</li>
+            <li>Troubleshot and resolved production issues including log analysis, performance bottlenecks, and cross-service failures.</li>
+            <li>Collaborated in Agile cross-functional teams (Dev, QA, DBA, Middleware) adhering to best practices.</li>
           </ul>
         </div>
 
         <div style="background:white; padding:20px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12);">
-          <h3>Cloud Engineer (DevOps & Linux) — HCLTech, Pune</h3>
+          <h3>Platform Engineer (DevOps) — HCLTech, Pune</h3>
           <p><i>Sept 2023 – June 2024</i></p>
           <ul style="margin-top:8px; line-height:1.5;">
-            <li>Managed VMware and Linux-based infrastructure across 300+ virtual machines.</li>
-            <li>Automated provisioning using Terraform, Ansible, and Shell scripts, reducing manual work by 60%.</li>
-            <li>Built and maintained CI/CD pipelines for microservices using Jenkins and GitHub Actions.</li>
-            <li>Deployed Docker workloads and managed Kubernetes clusters for on-prem and cloud.</li>
-            <li>Monitored infrastructure using vROps, Prometheus, and Grafana ensuring 99.9% uptime.</li>
-            <li>Collaborated with MQ, IIB, UNIX teams for middleware and environment configuration.</li>
+            <li>Managed Linux-based platforms hosting Java microservices ensuring high availability and security.</li>
+            <li>Automated environment provisioning using Terraform, Ansible, and Shell scripts.</li>
+            <li>Built and maintained CI/CD pipelines for microservices.</li>
+            <li>Deployed containerized applications with Docker and Kubernetes across cloud and on-prem.</li>
+            <li>Monitored systems using Prometheus and Grafana, achieving 99.9% uptime.</li>
+            <li>Collaborated with Dev, QA, and middleware teams to troubleshoot and resolve platform issues.</li>
           </ul>
         </div>
 
       </div>
     </section>
 
-    <!-- Selected Work Projects -->
     <section id="work" style="margin-top:40px;">
-      <h2 class="section-title">Selected Work</h2>
+      <h2 class="section-title">Personal Projects</h2>
       <div class="grid">
         <article class="card">
           <h3>Jarvis — Personal Voice Assistant</h3>
-          <p>A lightweight Python-based desktop voice assistant activated by “Jarvis, wake up”. Opens apps, websites and automates daily workflows. Dockerized for portability.</p>
-          <div class="tech">
-            <span>Python</span><span>Speech Recognition</span><span>Docker</span><span>Automation</span>
-          </div>
+          <p>Python-based desktop voice assistant activated by “Jarvis, wake up”. Opens apps, websites and automates daily workflows. Dockerized for portability.</p>
+          <div class="tech"><span>Python</span><span>Speech Recognition</span><span>Docker</span><span>Automation</span></div>
         </article>
 
         <article class="card">
           <h3>Emotion Recognition (CNN — FER2013)</h3>
           <p>CNN model on Google Colab using TensorFlow/Keras for facial emotion detection; includes data preprocessing and training pipeline.</p>
-          <div class="tech">
-            <span>TensorFlow</span><span>CNN</span><span>Computer Vision</span>
-          </div>
+          <div class="tech"><span>TensorFlow</span><span>CNN</span><span>Computer Vision</span></div>
         </article>
 
         <article class="card">
-          <h3>SSE UK — Analytics Tools</h3>
-          <p>APIs, automated reporting, and UI pages to support marketing & analytics teams — improved internal workflows and data pipelines.</p>
-          <div class="tech">
-            <span>APIs</span><span>JavaScript</span><span>Excel Automation</span>
-          </div>
+          <h3>Self-Healing Automation</h3>
+          <p>Automated monitoring and recovery system for cloud infrastructure and services. Detects failures, triggers scripts to remediate issues, and sends alerts to maintain uptime.</p>
+          <div class="tech"><span>Python</span><span>Shell Scripting</span><span>AWS</span><span>Automation</span></div>
         </article>
 
         <article class="card">
-          <h3>SC Johnson — Frontend Automation</h3>
-          <p>Small tools, frontend improvements and automation scripts to support internal processes and reduce manual effort.</p>
-          <div class="tech">
-            <span>Frontend</span><span>Automation</span><span>Data</span>
-          </div>
+          <h3>CI/CD Pipeline Project</h3>
+          <p>Implemented full CI/CD pipeline for Java microservices with Jenkins, GitHub Actions, Docker, and Kubernetes. Automated build, test, deployment, and rollback workflows.</p>
+          <div class="tech"><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>Kubernetes</span></div>
         </article>
       </div>
     </section>
 
-    <!-- Education -->
     <section id="education" style="margin-top:40px;">
       <h2 class="section-title">Education</h2>
-      <div style="
-        background:white;
-        padding:24px;
-        border-radius:16px;
-        box-shadow:0 8px 20px rgba(239,166,176,0.12);
-        line-height:1.6;
-      ">
+      <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); line-height:1.6;">
         <p><b>Bachelor of Technology in Information Technology</b>, PSIT, Kanpur (2019–2023)</p>
         <p>CGPA: 7.3/10</p>
       </div>
