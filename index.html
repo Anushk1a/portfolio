@@ -139,6 +139,32 @@
       font-size:13px;
     }
 
+    /* Pink puddle effect for Skills section */
+    #skills {
+      position: relative;
+      margin-top:40px;
+    }
+
+    .pink-puddle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 350px;
+      height: 350px;
+      background: rgba(239, 166, 176, 0.35); /* soft pink */
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(90px); /* makes it soft and puddle-like */
+      z-index: 0;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -52%) scale(1.05); }
+    }
+
+    /* Responsive tweaks */
     @media (max-width:520px){
       .photo{ width:92px; height:92px; flex: 0 0 92px; }
       .name{ font-size:18px; }
@@ -160,11 +186,11 @@
       </div>
 
       <nav>
-        <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
+        <a class="resume-btn" href="ANUSHKA-SINGHResume-.pdf" download>Download Resume</a>
       </nav>
     </header>
 
-    <section id="about" style="margin-top:40px;">
+    <section id="about">
       <h2 class="section-title">About Me</h2>
       <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); line-height:1.6;">
         <p>
@@ -177,9 +203,10 @@
       </div>
     </section>
 
-    <section id="skills" style="margin-top:40px;">
+    <section id="skills">
+      <div class="pink-puddle"></div> <!-- Pink puddle -->
       <h2 class="section-title">Skills</h2>
-      <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); display:flex; flex-wrap:wrap; gap:12px;">
+      <div style="background:white; padding:24px; border-radius:16px; box-shadow:0 8px 20px rgba(239,166,176,0.12); display:flex; flex-wrap:wrap; gap:12px; position:relative; z-index:1;">
         <span>Jenkins</span><span>GitHub</span><span>SonarQube</span><span>CI/CD Pipelines</span>
         <span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Linux</span>
         <span>Terraform</span><span>Ansible</span><span>Prometheus</span><span>Grafana</span>
